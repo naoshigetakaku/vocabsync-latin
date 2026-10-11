@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"
+     role="img" aria-label="VocabSync Latin">
+  <title>VocabSync Latin</title>
+
+  <defs>
+    <!-- The body: deep overhead, light pooling at the foot. -->
+    <linearGradient id="body" x1="256" y1="0" x2="256" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9C3E04"/>
+      <stop offset="0.45" stop-color="#E87610"/>
+      <stop offset="1" stop-color="#FFBC70"/>
+    </linearGradient>
+
+    <!-- Gloss, in the Aqua manner. The sweep is an ellipse hanging off the
+         top whose underside is the hard line that reads as glass. It stops
+         at 128 — above the letter's apex at 138 — because a sweep that
+         reaches the apex takes the mark's contrast with it, and contrast is
+         all there is left at home-screen size. -->
+    <linearGradient id="sweep" x1="256" y1="0" x2="256" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.24"/>
+    </linearGradient>
+
+    <!-- Light bounced back up off the foot. -->
+    <radialGradient id="bounce" cx="256" cy="512" r="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- A lit rim just inside the edge, brightest across the top. -->
+    <linearGradient id="rim" x1="256" y1="0" x2="256" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.14"/>
+    </linearGradient>
+
+    <clipPath id="shape">
+      <rect width="512" height="512" rx="112" ry="112"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#shape)">
+    <rect width="512" height="512" fill="url(#body)"/>
+    <ellipse cx="256" cy="-125" rx="420" ry="253" fill="url(#sweep)"/>
+    <ellipse cx="256" cy="512" rx="246" ry="154" fill="url(#bounce)"/>
+    <rect x="3" y="3" width="506" height="506" rx="109" ry="109"
+          fill="none" stroke="url(#rim)" stroke-width="6"/>
+  </g>
+
+  <!-- A letterform over a writing rule: the whole idea of the app in two strokes. -->
+  <g fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M177 323 L256 138 L335 323"/>
+    <path d="M209 267 L304 267"/>
+    <path d="M163 374 L349 374"/>
+  </g>
+</svg>
